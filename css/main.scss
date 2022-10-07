@@ -1,6 +1,22 @@
 @use './partials/global' as *;
 @use './partials/brandbook' as *;
 
+@mixin destination-card {
+    background-size: cover;
+    border-radius: .625rem;
+    box-shadow:  0 .25rem .25rem rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);       
+    min-width: 15.625rem;
+    min-height: 25rem;
+    max-height: 25rem;
+    border-radius: .3125rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
 
 .hero {
     margin-top: 4.3125rem;
@@ -36,15 +52,15 @@
                 &__banner-button{
                     background-color: $tertiary-color;
                     color: $background-color;
-                    font-size: 15px;
+                    font-size: .9375rem;
                     border: none;
-                    border-radius: 18px;
-                    padding: 10px 40px 10px 40px;
+                    border-radius: 1.125rem;
+                    padding: .625rem 2.5rem .625rem 2.5rem;
                 }
 
                 &__banner-image{
                     max-width: 80%;
-                    margin-right: 60px;
+                    margin-right: 3.75rem;
          }
 
                     &__banner-image-container{
@@ -54,4 +70,43 @@
                         
                     }
 
+}
+
+.recommend{
+    padding: 1.25rem;
+
+    &__title{
+        color: $secondary-color;
+        font-size: 1.25rem;
+        margin-left: 5rem;
+        padding-bottom: .625rem;
+    }
+
+        &__container{
+            display: flex;
+            justify-content: center;
+            
+            
+            
+        }
+
+            &__container-card--hawaii{
+                background-image: url(../Images/hawaii.jpg);
+                @include destination-card();
+            }
+                &__container-card--iceland{
+                    background-image: url(../Images/iceland.jpg);
+                    @include destination-card();
+
+                }
+                    &__container-card--greece{
+                        background-image: url(../Images/greece.jpg);
+                        @include destination-card();
+                        
+                    }
+                        &__container-card-title{
+                            padding: 0px 1.25rem 0 0 ;
+                            font-size: 1.25rem;
+                            color: $background-color;
+                        }
 }
