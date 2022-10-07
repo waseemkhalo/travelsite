@@ -1,3 +1,7 @@
+body {
+  font-family: Verdana;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */
