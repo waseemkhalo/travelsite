@@ -10,22 +10,26 @@ body {
 
 body {
   margin: 0;
+  background-color: red;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-  margin-left: 60px;
-  margin-right: 40px;
+  width: 100%;
   background-color: #ffffff;
+  position: fixed;
+  top: 0;
 }
 .nav__logo {
   text-decoration: none;
   color: #335576;
+  margin-left: 6.25rem;
 }
 .nav__link-container {
   display: flex;
   align-items: center;
+  margin-right: 5rem;
 }
 .nav__link-container-list {
   list-style: none;
@@ -41,5 +45,6 @@ body {
   border-bottom: 3px solid #DB7A4E;
   color: #000000;
   text-decoration: none;
+  margin: 0.625rem;
   padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

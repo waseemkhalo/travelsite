@@ -8,23 +8,27 @@
 
 body {
     margin: 0;
+    background-color: red;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    margin-left: 60px;
-    margin-right: 40px;
+    width: 100%;
     background-color: $background-color;
+    position: fixed;
+    top: 0;
 
     &__logo {
         text-decoration: none;
         color: $secondary-color;
+        margin-left: 6.25rem;
     }
 
         &__link-container{
             display: flex;
             align-items: center;
+            margin-right: 5rem;
         }
 
             &__link-container-list{
@@ -42,6 +46,7 @@ body {
                         border-bottom: 3px solid $tertiary-color;
                         color: $default-color;
                         text-decoration: none;
+                        margin: .625rem;
                         padding-bottom: 10px;
                     }
 }
