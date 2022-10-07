@@ -1,7 +1,45 @@
 body {
-  font-family: Verdana;
+  font-family: "Verdana";
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 40px;
+  background-color: #ffffff;
+}
+.nav__logo {
+  text-decoration: none;
+  color: #335576;
+}
+.nav__link-container {
+  display: flex;
+  align-items: center;
+}
+.nav__link-container-list {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.nav__links {
+  text-decoration: none;
+  color: #000000;
+  margin: 0.625rem;
+}
+.nav__links--active {
+  border-bottom: 3px solid #DB7A4E;
+  color: #000000;
+  text-decoration: none;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=destinations.css.map */

@@ -1,9 +1,47 @@
-@use './brandbook';
+@use './brandbook' as *;
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 40px;
+    background-color: $background-color;
 
+    &__logo {
+        text-decoration: none;
+        color: $secondary-color;
+    }
 
+        &__link-container{
+            display: flex;
+            align-items: center;
+        }
+
+            &__link-container-list{
+                list-style: none;
+                display: flex;
+                padding-left: 0;
+            }
+                &__links{
+                    text-decoration: none;
+                    color: $default-color;
+                    margin: .625rem;
+                }
+
+                    &__links--active{
+                        border-bottom: 3px solid $tertiary-color;
+                        color: $default-color;
+                        text-decoration: none;
+                        padding-bottom: 10px;
+                    }
+}
