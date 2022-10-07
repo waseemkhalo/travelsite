@@ -94,6 +94,7 @@ body {
 
 .recommend {
   padding: 1.25rem;
+  margin-bottom: 3.75rem;
 }
 .recommend__title {
   color: #335576;
@@ -160,4 +161,9 @@ body {
   padding: 0px 1.25rem 0 0;
   font-size: 1.25rem;
   color: #ffffff;
+}
+
+.footer {
+  background-color: #FEFAF5;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

@@ -58,22 +58,23 @@
                     padding: .625rem 2.5rem .625rem 2.5rem;
                 }
 
-                &__banner-image{
-                    max-width: 80%;
-                    margin-right: 3.75rem;
-         }
+                    &__banner-image{
+                        max-width: 80%;
+                        margin-right: 3.75rem;
+            }
 
-                    &__banner-image-container{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        
-                    }
+                        &__banner-image-container{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                        }
 
 }
 
 .recommend{
     padding: 1.25rem;
+    margin-bottom: 3.75rem;
 
     &__title{
         color: $secondary-color;
@@ -85,8 +86,6 @@
         &__container{
             display: flex;
             justify-content: center;
-            
-            
             
         }
 
@@ -109,4 +108,11 @@
                             font-size: 1.25rem;
                             color: $background-color;
                         }
+}
+
+
+
+.footer{
+    background-color: $primary-color;
+    display: flex;
 }
