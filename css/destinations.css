@@ -99,7 +99,21 @@ body {
 
 .destination {
   margin-top: 4.3125rem;
+}
+.destination--hawaii {
   background-image: url(../Images/hawaii.jpg);
+  height: 43.75rem;
+  background-position: center;
+  background-size: cover;
+}
+.destination--iceland {
+  background-image: url(../Images/iceland.jpg);
+  height: 43.75rem;
+  background-position: center;
+  background-size: cover;
+}
+.destination--greece {
+  background-image: url(../Images/greece.jpg);
   height: 43.75rem;
   background-position: center;
   background-size: cover;
@@ -108,6 +122,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
 }
 .destination__itinerary-card {
   background-color: #ffffff;

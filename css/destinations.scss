@@ -10,49 +10,79 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: .9375rem;
-    
+    padding: .9375rem;   
 }
 
-.destination{
-    margin-top: 4.3125rem;
+
+@mixin hawaii {
     background-image: url(../Images/hawaii.jpg);
     height: 43.75rem;
     background-position: center;
     background-size: cover;
+}
 
-    &__itinerary-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+@mixin iceland {
+    background-image: url(../Images/iceland.jpg);
+    height: 43.75rem;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin greece {
+    background-image: url(../Images/greece.jpg);
+    height: 43.75rem;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.destination{
+    margin-top: 4.3125rem;
+
+    &--hawaii{
+        @include hawaii();
     }
-
-        &__itinerary-card{
-            background-color: $background-color;
-            @include itinerary-card();
+        &--iceland{
+            @include iceland();
         }
+            &--greece{
+                @include greece();
+            }
 
-                &__title-header{
-                    font-size: 5rem;
-                    color: $background-color;
-                    padding-left: 5rem;
-                    padding-top: 3.75rem;
-      
+                &__itinerary-container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    margin-left: 7.5rem;
+                    margin-right: 7.5rem;
                 }
 
-                    &__itinerary-card-content{
-                        display: flex;
-                        flex-direction: column;
-                        align-content: center;
-               
+                    &__itinerary-card{
+                        background-color: $background-color;
+                        @include itinerary-card();
                     }
-                        &__itinerary-card-content-title{
-                            border-bottom: 2px solid black;
-                            margin-top: 0;
-                        }
-                            &__itinerary-card-content-items{
-                                background-color: $primary-color;
-                                padding: 1rem;
-                                margin: .625rem;
+
+                            &__title-header{
+                                font-size: 5rem;
+                                color: $background-color;
+                                padding-left: 5rem;
+                                padding-top: 3.75rem;
+                
                             }
-}
+
+                                &__itinerary-card-content{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-content: center;
+                        
+                                }
+                                    &__itinerary-card-content-title{
+                                        border-bottom: 2px solid black;
+                                        margin-top: 0;
+                                    }
+                                        &__itinerary-card-content-items{
+                                            background-color: $primary-color;
+                                            padding: 1rem;
+                                            margin: .625rem;
+                                        }
+            }
