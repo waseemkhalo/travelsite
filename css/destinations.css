@@ -129,7 +129,7 @@ body {
   background-color: #ffffff;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
   min-width: 17.625rem;
-  min-height: 24rem;
+  min-height: 23rem;
   max-height: 25rem;
   border-radius: 0.3125rem;
   display: flex;
@@ -157,6 +157,7 @@ body {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
+  margin-bottom: 0;
 }
 .destination__itinerary-card-list-items {
   background-color: #FEFAF5;
