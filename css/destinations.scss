@@ -80,9 +80,17 @@
                                         border-bottom: 2px solid black;
                                         margin-top: 0;
                                     }
-                                        &__itinerary-card-content-items{
-                                            background-color: $primary-color;
-                                            padding: 1rem;
-                                            margin: .625rem;
+
+                                        &__itinerary-card-list{
+                                            text-decoration: none;
+                                            list-style: none;
+                                            padding-left: 0;
+                                            margin-top: 0;
                                         }
+                                            &__itinerary-card-list-items{
+                                                background-color: $primary-color;
+                                                padding: 1rem;
+                                                margin: .625rem;
+                                                text-decoration: none;
+                                            }
             }
