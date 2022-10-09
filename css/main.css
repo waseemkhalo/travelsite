@@ -35,6 +35,13 @@ body {
   display: flex;
   padding-left: 0;
 }
+.nav__links:hover {
+  border-bottom: 3px solid #DB7A4E;
+  color: #000000;
+  text-decoration: none;
+  margin: 0.625rem;
+  padding-bottom: 10px;
+}
 .nav__links {
   text-decoration: none;
   color: #000000;
@@ -48,6 +55,9 @@ body {
   padding-bottom: 10px;
 }
 
+@-webkit-keyframes nav__hover {}
+
+@keyframes nav__hover {}
 .footer {
   background-color: #FEFAF5;
   display: flex;

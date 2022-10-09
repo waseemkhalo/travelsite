@@ -10,6 +10,14 @@ body {
     margin: 0;
 }
 
+@mixin nav__links {
+    border-bottom: 3px solid $tertiary-color;
+    color: $default-color;
+    text-decoration: none;
+    margin: .625rem;
+    padding-bottom: 10px;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -35,6 +43,13 @@ body {
                 display: flex;
                 padding-left: 0;
             }
+
+            &__links:hover{
+                @include nav__links();
+                // animation: nav__hover 2s ease-in-out 0 1;
+
+            }
+            
                 &__links{
                     text-decoration: none;
                     color: $default-color;
@@ -42,14 +57,14 @@ body {
                 }
 
                     &__links--active{
-                        border-bottom: 3px solid $tertiary-color;
-                        color: $default-color;
-                        text-decoration: none;
-                        margin: .625rem;
-                        padding-bottom: 10px;
+                        @include nav__links();
                     }
 }
 
+@keyframes nav__hover{
+    // from {transform: translate(0px); opacity: 0;}
+    // to {opacity: 1;}
+}
 
 .footer{
     background-color: $primary-color;
