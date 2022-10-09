@@ -74,7 +74,7 @@ body {
 .footer__sub-header {
   color: #DB7A4E;
   text-transform: uppercase;
-  font-size: small;
+  font-size: 11px;
   margin-bottom: 2.0625rem;
   margin-top: 0;
   margin-bottom: 0;
@@ -95,4 +95,49 @@ body {
 .footer__divider2 {
   margin-left: 40px;
   margin-right: 40px;
+}
+
+.destination {
+  margin-top: 4.3125rem;
+  background-image: url(../Images/hawaii.jpg);
+  height: 43.75rem;
+  background-position: center;
+  background-size: cover;
+}
+.destination__itinerary-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.destination__itinerary-card {
+  background-color: #ffffff;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  min-width: 17.625rem;
+  min-height: 24rem;
+  max-height: 25rem;
+  border-radius: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.9375rem;
+}
+.destination__title-header {
+  font-size: 5rem;
+  color: #ffffff;
+  padding-left: 5rem;
+  padding-top: 3.75rem;
+}
+.destination__itinerary-card-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.destination__itinerary-card-content-title {
+  border-bottom: 2px solid black;
+  margin-top: 0;
+}
+.destination__itinerary-card-content-items {
+  background-color: #FEFAF5;
+  padding: 1rem;
+  margin: 0.625rem;
 }/*# sourceMappingURL=destinations.css.map */

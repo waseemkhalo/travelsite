@@ -1,1 +1,58 @@
 @use './partials/global' as *;
+@use './partials/brandbook' as *;
+
+@mixin itinerary-card {
+    box-shadow:  0 .25rem .25rem rgba(0, 0, 0, 0.2);     
+    min-width: 17.625rem;
+    min-height: 24rem;
+    max-height: 25rem;
+    border-radius: .3125rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: .9375rem;
+    
+}
+
+.destination{
+    margin-top: 4.3125rem;
+    background-image: url(../Images/hawaii.jpg);
+    height: 43.75rem;
+    background-position: center;
+    background-size: cover;
+
+    &__itinerary-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+        &__itinerary-card{
+            background-color: $background-color;
+            @include itinerary-card();
+        }
+
+                &__title-header{
+                    font-size: 5rem;
+                    color: $background-color;
+                    padding-left: 5rem;
+                    padding-top: 3.75rem;
+      
+                }
+
+                    &__itinerary-card-content{
+                        display: flex;
+                        flex-direction: column;
+                        align-content: center;
+               
+                    }
+                        &__itinerary-card-content-title{
+                            border-bottom: 2px solid black;
+                            margin-top: 0;
+                        }
+                            &__itinerary-card-content-items{
+                                background-color: $primary-color;
+                                padding: 1rem;
+                                margin: .625rem;
+                            }
+}
