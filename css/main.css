@@ -48,6 +48,55 @@ body {
   padding-bottom: 10px;
 }
 
+.footer {
+  background-color: #FEFAF5;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.footer__sub-section {
+  display: flex;
+  align-self: baseline;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 1.5625rem;
+}
+.footer__title-header {
+  color: #335576;
+  font-size: 1.5625rem;
+}
+.footer__sub-header {
+  color: #DB7A4E;
+  text-transform: uppercase;
+  font-size: small;
+  margin-bottom: 2.0625rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+.footer__copy {
+  color: #335576;
+}
+.footer__icons {
+  display: flex;
+  max-height: 30px;
+  justify-content: space-evenly;
+}
+.footer__divider1 {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.footer__divider2 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .hero {
   margin-top: 4.3125rem;
   display: flex;
@@ -58,23 +107,23 @@ body {
   padding-top: 2.5rem;
   padding-bottom: 5rem;
 }
-.hero__banner-container {
+.hero__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 6.25rem;
   margin-right: 1.25rem;
 }
-.hero__banner-title {
+.hero__title {
   color: #335576;
   font-size: 2.5rem;
 }
-.hero__banner-paragraph {
+.hero__paragraph {
   color: #335576;
   margin-bottom: 2.0625rem;
   margin-top: 0;
 }
-.hero__banner-button {
+.hero__button {
   background-color: #DB7A4E;
   color: #ffffff;
   font-size: 0.9375rem;
@@ -82,11 +131,11 @@ body {
   border-radius: 1.125rem;
   padding: 0.625rem 2.5rem 0.625rem 2.5rem;
 }
-.hero__banner-image {
+.hero__image {
   max-width: 80%;
   margin-right: 3.75rem;
 }
-.hero__banner-image-container {
+.hero__image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,9 +210,4 @@ body {
   padding: 0px 1.25rem 0 0;
   font-size: 1.25rem;
   color: #ffffff;
-}
-
-.footer {
-  background-color: #FEFAF5;
-  display: flex;
 }/*# sourceMappingURL=main.css.map */
