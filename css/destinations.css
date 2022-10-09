@@ -55,9 +55,6 @@ body {
   padding-bottom: 10px;
 }
 
-@-webkit-keyframes nav__hover {}
-
-@keyframes nav__hover {}
 .footer {
   background-color: #FEFAF5;
   display: flex;
