@@ -40,7 +40,7 @@ body {
   color: #000000;
   text-decoration: none;
   margin: 0.625rem;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 .nav__links {
   text-decoration: none;
@@ -52,7 +52,7 @@ body {
   color: #000000;
   text-decoration: none;
   margin: 0.625rem;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 
 .footer {
